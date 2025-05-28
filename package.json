@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker-build": "docker build -t socket-app .",
+    "docker-run": "docker run -d -p 8088:3030 socket-app"
   },
   "author": "",
   "license": "ISC",
